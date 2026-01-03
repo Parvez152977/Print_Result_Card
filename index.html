@@ -1,105 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CCN University - Semester Final Result Fall 25</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
 
-    <!-- Primary Meta Tags -->
-    <title>Marksheet</title>
-    <meta name="description" content="Result">
-    <meta name="keywords" content="Mid, Final, Result">
-    <meta name="author" content="Parvez Alam">
-
-    <!-- Favicon -->
-    <link rel="icon" type="images" href="images/ccn-logo.jpg">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/ccn-logo.jpg">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://yourwebsite.com/">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/styles.css">
-
-    <!-- Preconnect to external domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- JavaScript (defer recommended) -->
-    <script src="script.js" defer></script>
-
-    <!-- Structured Data / JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Print Result - Exam Results Printing Service",
-        "description": "Professional printing and delivery of university exam results and certificates across India.",
-        "url": "https://printresult.com/",
-        "serviceType": "Document Printing",
-        "author": {
-            "@type": "Person",
-            "name": "Parvez Alam"
-        }
-    }
-    </script>
-</head>
-<main>
-    <header>
-    
-    </header>
-    
     <body>
-        <p>
-            Welcome to hell , where you have to work like machine....
-        </p>
+        <div class="container">
+            <div class="print-header">
+                <button class="print-btn" onclick="window.print()">
+                    <i class="fas fa-print"></i> Print Result
+                </button>
+                <button class="toggle-view-btn" id="toggleView">
+                    <i class="fas fa-eye"></i> Toggle Preview
+                </button>
+            </div>
 
-        <!--Banner section-->
-        <div>
-            <div><img src="images/ccn-logo.jpg"></div>
-            <div>
-                <h1>CCN University Of <br>Science & Technology</h1>
-                <h3>Kotbari, Cumilla</h3>
+            <div class="result-page">
+                <!-- University Header -->
+                <header class="university-header">
+                    <div class="university-logo">
+                        <div class="logo-placeholder">
+                            <img id="logo_ccn" class="university_logo" src="images/ccn-logo.jpg">
+                            <!-- <i class="fas fa-university"></i> -->
+                        </div>
+                        <div class="logo-text"></div>
+                        <div class="logo-text"></div>
+                    </div>
+                    <div class="university-info">
+                        <h1>CCN University of Science & Technology</h1>
+                        <p class="university-address">Kotbari, Cumilla</p>
+                    </div>
+                </header>
+
+                <!-- Result Title -->
+                <div class="result-title">
+                    <h2>Semester Final Result Fall 25</h2>
+                    <!-- <div class="result-decoration">
+                        <div class="line"></div>
+                         <div class="star"><i class="fas fa-star"></i></div>
+                        <div class="line"></div>
+                    </div> -->
+                </div>
+
+                <div class="content-wrapper">
+                    <!-- Left Column: Student Information -->
+                    <div class="student-info-section">
+                        <h3>Student Information:</h3>
+
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Name:</span>
+                                <span class="info-value">John Alexander Doe</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">ID:</span>
+                                <span class="info-value">CCN-2022-001235</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Batch:</span>
+                                <span class="info-value">52nd</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Department:</span>
+                                <span class="info-value">Computer Science & Engineering</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Date of Birth:</span>
+                                <span class="info-value">15th March, 2001</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Address:</span>
+                                <span class="info-value">123 University Road, Kotbari, Cumilla</span>
+                            </div>
+                        </div>
+
+                        <!-- Result Section -->
+                        <div class="result-section">
+                            <h3>Result</h3>
+                            <div class="result-summary">
+                                <div class="result-item">
+                                    <span class="result-label">CGPA:</span>
+                                    <span class="result-value highlight">3.85</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Letter Grade:</span>
+                                    <span class="result-value highlight">A+</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Position:</span>
+                                    <span class="result-value highlight">5th</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Total Credits:</span>
+                                    <span class="result-value">15.5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Menu Position Note -->
+                        <div class="menu-position">
+                            <p><i class="fas fa-info-circle"></i> Menu position: Bottom right</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Student Photo -->
+                    <div class="student-photo-section">
+                        <div class="photo-container">
+                            <div class="photo-placeholder">
+                                <!-- <i class="fas fa-user-graduate"></i> -->
+                                 <img id="students_photo" class="university-logo" src="images/shikamaru-nara.jpg">
+                                <div class="photo-text">Student Photo</div>
+                            </div>
+                            <div class="photo-info">
+                                <p><strong>John Alexander Doe</strong></p>
+                                <p>ID: CCN-2022-001235</p>
+                                <p>Department: CSE</p>
+                                <p>Fall 25</p>
+                            </div>
+                        </div>
+
+                        <!-- Course Results Table -->
+                        <div class="course-results">
+                            <h3>Course Results</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Course Code</th>
+                                        <th>Course Name</th>
+                                        <th>Credit</th>
+                                        <th>Grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>CSE-101</td>
+                                        <td>Introduction to Programming</td>
+                                        <td>3.0</td>
+                                        <td class="grade-a">A+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CSE-201</td>
+                                        <td>Data Structures</td>
+                                        <td>3.0</td>
+                                        <td class="grade-a">A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CSE-301</td>
+                                        <td>Algorithms</td>
+                                        <td>3.0</td>
+                                        <td class="grade-a-minus">A-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MAT-101</td>
+                                        <td>Calculus I</td>
+                                        <td>3.0</td>
+                                        <td class="grade-b-plus">B+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PHY-101</td>
+                                        <td>Physics I</td>
+                                        <td>3.0</td>
+                                        <td class="grade-a">A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ENG-101</td>
+                                        <td>English Composition</td>
+                                        <td>1.5</td>
+                                        <td class="grade-a">A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="result-footer">
+                    <div class="footer-note">
+                        <p><i class="fas fa-certificate"></i> This is an official document from CCN University of
+                            Science & Technology</p>
+                    </div>
+                    <div class="footer-signatures">
+                        <div class="signature">
+                            <div class="signature-line"></div>
+                            <p>Chairman, Department of CSE</p>
+                        </div>
+                        <div class="signature">
+                            <div class="signature-line"></div>
+                            <p>Registrar</p>
+                        </div>
+                        <div class="signature">
+                            <div class="signature-line"></div>
+                            <p>Controller of Examinations</p>
+                        </div>
+                    </div>
+                    <div class="footer-date">
+                        <p>Result Published: 25th February, 2025</p>
+                    </div>
+                </footer>
             </div>
         </div>
-        <div>
-            <h2>Semester Final Result <u>Fall 2025</u></h2>
-        </div>
 
-        <!--Student Info section-->
-        <div>
-            <div>
-                <p>
-                    <span>Name: </span><br>
-                    <span>ID: </span><br>
-                    <span>Batch: </span><br>
-                    <span>Department: </span><br>
-                    <span>Date of birth: </span><br>
-                    <!--<span>Name: </span><br>
-                    <span>Name: </span><br>
-                    <span>Name: </span><br>-->
-                </p>
-            </div>
-            <div>
-                <img src="">
-            </div>
-        </div>
+        <script>
+            // Toggle between print preview and interactive view
+            document.getElementById('toggleView').addEventListener('click', function () {
+                const resultPage = document.querySelector('.result-page');
+                resultPage.classList.toggle('print-preview');
 
-        <!--Result table section-->
-        <div>
-            result table
-        </div>
+                const icon = this.querySelector('i');
+                if (resultPage.classList.contains('print-preview')) {
+                    icon.className = 'fas fa-edit';
+                    this.innerHTML = '<i class="fas fa-edit"></i> Return to Edit';
+                } else {
+                    icon.className = 'fas fa-eye';
+                    this.innerHTML = '<i class="fas fa-eye"></i> Toggle Preview';
+                }
+            });
+        </script>
     </body>
-
-
-    <footer>
-        <p>@developed by Black Shadow</p>
-    </footer>
-</main>
 
 </html>

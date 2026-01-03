@@ -1,0 +1,505 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.university-logo{
+    width: 150px;
+    height: 150px;
+
+    
+}
+
+img{
+    border-radius: 45%;
+    
+}
+#students_photo{
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.print-header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.print-btn,
+.toggle-view-btn {
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.print-btn:hover {
+    background-color: #1a252f;
+}
+
+.toggle-view-btn {
+    background-color: #3498db;
+}
+
+.toggle-view-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Main Result Page */
+.result-page {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* University Header */
+.university-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #2c3e50;
+}
+
+.university-logo {
+    margin-right: 30px;
+}
+
+.logo-placeholder {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    font-size: 12px;
+    color: #7f8c8d;
+    font-weight: 500;
+}
+
+.university-info h1 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.university-address {
+    color: #7f8c8d;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Result Title */
+.result-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.result-title h2 {
+    color: #2c3e50;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.result-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.line {
+    height: 2px;
+    width: 150px;
+    background-color: #3498db;
+}
+
+.star {
+    color: #f39c12;
+    font-size: 20px;
+}
+
+/* Content Layout */
+.content-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Student Info Section */
+.student-info-section {
+    flex: 1;
+}
+
+.student-info-section h3 {
+    color: #2c3e50;
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3498db;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.info-label {
+    font-weight: 600;
+    min-width: 150px;
+    color: #2c3e50;
+}
+
+.info-value {
+    color: #333;
+}
+
+/* Result Section */
+.result-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2ecc71;
+    margin-bottom: 30px;
+}
+
+.result-section h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.result-summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.result-label {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.result-value {
+    font-weight: 700;
+    color: #333;
+}
+
+.highlight {
+    color: #2ecc71;
+    font-size: 18px;
+}
+
+/* Menu Position */
+.menu-position {
+    background-color: #e3f2fd;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border-left: 4px solid #3498db;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.menu-position i {
+    color: #3498db;
+    margin-right: 8px;
+}
+
+/* Student Photo Section */
+.student-photo-section {
+    flex: 1;
+}
+
+.photo-container {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.photo-placeholder {
+    width: 200px;
+    height: 250px;
+    background-color: #ecf0f1;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #7f8c8d;
+    font-size: 60px;
+}
+
+.photo-text {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.photo-info {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.photo-info p {
+    margin: 8px 0;
+    color: #2c3e50;
+}
+
+/* Course Results Table */
+.course-results h3 {
+    color: #2c3e50;
+    font-size: 22px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3498db;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+td {
+    padding: 15px;
+    color: #333;
+}
+
+.grade-a {
+    color: #2ecc71;
+    font-weight: 700;
+}
+
+.grade-a-minus {
+    color: #3498db;
+    font-weight: 700;
+}
+
+.grade-b-plus {
+    color: #f39c12;
+    font-weight: 700;
+}
+
+/* Footer */
+.result-footer {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 3px solid #2c3e50;
+}
+
+.footer-note {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.footer-note i {
+    color: #e74c3c;
+    margin-right: 8px;
+}
+
+.footer-signatures {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.signature {
+    text-align: center;
+    flex: 1;
+    padding: 0 20px;
+}
+
+.signature-line {
+    height: 1px;
+    background-color: #333;
+    margin: 0 auto 10px;
+    width: 150px;
+}
+
+.signature p {
+    color: #7f8c8d;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-date {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 500;
+    padding-top: 15px;
+    border-top: 1px dashed #ddd;
+}
+
+/* Print Preview Mode */
+.result-page.print-preview {
+    padding: 50px;
+    box-shadow: none;
+    border: 1px solid #ddd;
+}
+
+.result-page.print-preview .print-header {
+    display: none;
+}
+
+/* Print Styles */
+@media print {
+    .print-header {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        padding: 0;
+    }
+
+    .result-page {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .toggle-view-btn {
+        display: none;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .university-header {
+        flex-direction: column;
+    }
+
+    .university-logo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .result-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-signatures {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .result-page {
+        padding: 25px;
+    }
+
+    .university-info h1 {
+        font-size: 22px;
+    }
+
+    .result-title h2 {
+        font-size: 22px;
+    }
+
+    .info-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .info-label {
+        min-width: auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
